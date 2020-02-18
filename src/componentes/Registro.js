@@ -76,37 +76,65 @@ export default class MainActivity extends Component  {
     
 
     <View style={styles.MainContainer}>
-      <View style={{ flex: 1, flexDirection: 'column' }}>
-            <View style={{ flex:1.5, backgroundColor: '076076'}} />
-            <View style={{ flex:2,width:360, backgroundColor: 'white',borderRadius:10 }}>
-            <View style={{flex:3, backgroundColor: 'steelblue' }}>
-                            <Item floatingLabel style={styles.Items }>
-                            <Label>Email:</Label>
+       <View style={{ flex: 1, flexDirection: 'column' }}>
+        <View style={{ width: 360, height: 150, backgroundColor: '076076' }}>
+
+        </View>
+        
+        <View style={{ width: 360, height: 250, backgroundColor: 'skyblue',borderRadius:20 }} >
+            <View style={{marginTop:150, height: 400, backgroundColor: 'steelblue',borderRadius:20 }} >
+                                
+                            <Item floatingLabel style={styles.Items}>
+                                <Label style={styles.TextStyle}>Email:</Label>
                                 <Input
-                                Required
-                                    clearButtonMode="always"
+                                    Required
+                                    keyboardType="email-address"
                                     autoCorrect={false}
                                     autoCapitalize="none"
-                                    onChangeText={TextInputValue => this.setState({ TextInput_Student_Name: TextInputValue })}
+                                   
                                 />
 
                             </Item>
 
-
-                        <Item floatingLabel style={styles.Items}>
-                                <Label>Telefono:</Label>
+                            <Item floatingLabel style={styles.Items}>
+                                <Label style={styles.TextStyle}>Telefono:</Label>
                                 <Input
                                 Required
                                     keyboardType="phone-pad"  
                                     autoCorrect={false}
                                     autoCapitalize="none"
-                                    onChangeText={TextInputValue => this.setState({ TextInput_Student_PhoneNumber: TextInputValue })}
+                                    
                                 />
 
-                        </Item>
-                </View>
-            </View>
+                            </Item>
+
+                            <Item floatingLabel style={styles.Items}>
+                                <Label style={styles.TextStyle}>Fecha de Nacimiento:</Label>
+                                <Input
+                                Required
+                                    
+                                    autoCorrect={false}
+                                    autoCapitalize="none"
+                                    
+                                />
+
+                            </Item>
+
                 
+                    
+                            <Button style={{margin:10,width:340,height:60,borderRadius:10 }}
+                                full
+
+                                primary
+                                onPress= {() => {Actions.show(); }}
+                                
+                                >  
+                                
+                                <Text style={{ color: 'white',textAlign:'center',fontSize:30 }}>Continuar</Text>
+                            </Button>
+            </View>
+        
+        </View>
       </View>
         
     </View>
@@ -143,10 +171,9 @@ const styles = StyleSheet.create({
       Items:{
         margin:10,
       },  
-    
+      
       TextStyle:{
         color:'#fff',
-        textAlign:'center',
       },
     
       rowViewContainer: {
