@@ -4,7 +4,7 @@ import Registro from './src/componentes/Registro'
 export default function App() {
   return (
     
-      <Registro/>
+    <Registro/>  
     
   );
 }
