@@ -5,6 +5,7 @@ import Registro_P from './src/screens/R_particular';
 import SwithcUsuario from './src/screens/S_user';
 import Prestador from './src/screens/Prestador';
 import Repru from './src/screens/regpru';
+import Nueva from './src/screens/Untitled2';
 /* import { Router, Scene } from 'react-native-router-flux'; */
 
 export default class MainActivity extends Component{
@@ -22,7 +23,7 @@ export default class MainActivity extends Component{
     
         </Scene>
       </Router> */
-      <Repru/>
+      <Nueva/>
         );
       }
 }
