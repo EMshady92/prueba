@@ -1,12 +1,29 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { StyleSheet, Image, View } from 'react-native';
-import Registro from './src/componentes/Registro'
-export default function App() {
-  return (
+import Registro from './src/componentes/Registro';
+import Registro_P from './src/componentes/R_particular';
+import SwithcUsuario from './src/componentes/S_user';
+import Prestador from './src/componentes/Prestador';
+/* import { Router, Scene } from 'react-native-router-flux'; */
+
+export default class MainActivity extends Component{
+  
     
-    <Registro/>  
+    render(){  
+
+      return ( 
+       /*  <Router>
+              
+        <Scene key="root">
+          <Scene key="home" component={Registro} title="Registro"/>
+          <Scene key="registro_p" component={Registro_P} title="Registro Particular"/>
+          <Scene key="Sitchuser" component={SwithcUsuario} title="Switch Usuario"/>
     
-  );
+        </Scene>
+      </Router> */
+      <Prestador/>
+        );
+      }
 }
 
 const styles = StyleSheet.create({

@@ -1,14 +1,11 @@
 import React, { Component } from 'react';
 import { LinearGradient } from 'expo-linear-gradient';
-import { StyleSheet, View, Alert, TextInput, Platform,Text,Image, TouchableOpacity, ListView, ActivityIndicator } from 'react-native';
-import { Container, Content, Header, Form, Input, Item, Button, Label} from 'native-base'
-import { CheckBox } from 'react-native-elements'; // 0.16.0
-//import { StackNavigator } from 'react-navigation';
-//import {createAppContainer} from 'react-navigation';
-//import {createStackNavigator} from 'react-navigation-stack';
+import { StyleSheet, View, Platform,Text,Image } from 'react-native';
+import { Input, Item, Button, Label} from 'native-base'
+//import Icon from 'react-native-vector-icons/FontAwesome';
+import { CheckBox } from 'react-native-elements'; 
 
 import { Actions } from 'react-native-router-flux';
-import Loading from 'react-native-whc-loading';
 
 export default class MainActivity extends Component  {
 
@@ -18,56 +15,6 @@ export default class MainActivity extends Component  {
      title: 'Registro',
   };
 
-/* constructor(props) {
-
-   super(props)
-
-   this.state = {
-
-     TextInput_Student_Name: '',
-     TextInput_Student_Class: '',
-     TextInput_Student_PhoneNumber: '',
-     TextInput_Student_Email: '',
-
-   }
-
- } */
-
- /* InsertStudentRecordsToServer = () =>{
-  this.refs.loading.show(); //abre animacion cargando
-      fetch('http://www.tiempocompleto-zacatecas.com/slimshady92/InsertStudentData.php', {
-      method: 'POST',
-      headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-
-        student_name : this.state.TextInput_Student_Name,
-
-        student_class : this.state.TextInput_Student_Class,
-
-        student_phone : this.state.TextInput_Student_PhoneNumber,
-
-        student_email: this.state.TextInput_Student_Email
-
-      })
-   
-      }).then((response) => response.json())
-          .then((responseJson) => {
-
-            // Showing response message coming from server after inserting records.
-            setTimeout(()=>{
-              this.refs.loading.close(); //cierra animacion cargando despues de 2 segundos
-              Alert.alert(responseJson); 
-              this.handleClick = Actions.show();
-            }, 2000);
-         
-          }).catch((error) => {
-            console.error(error);
-          });
-
-} */
 
   
   render(){  
@@ -78,21 +25,34 @@ export default class MainActivity extends Component  {
     <View style={styles.MainContainer}>
        <View style={{ flex: 1, flexDirection: 'column' }}>
         <View style={{ width: 360, height: 150, backgroundColor: '#076076' }}>
-
+        <View style={{flex:1}}>
+                  
+                    <Text style={styles.nombre1}>Nombre ApellidoPaterno</Text>
+                    <Text style={styles.nombre2}>Lic.</Text>
+                    
+      
+                </View>
+                 <View style={{marginBottom:40,marginLeft:30}}>
+                <Image source={require('../../assets/icon.png')} style={{borderRadius:30,alignItems:'flex-start', width:70,height:70,marginTop:30,}} />
+                </View> 
         </View>
         
                 <View style={{ width: 360, height: 500, backgroundColor: 'white',borderRadius:20 }} >
-                <View style={{flex:1, backgroundColor:'dark'}}>
+                <View style={{flex:1}}>
                    <Text style={{marginLeft:40,marginTop:30, alignContent:'flex-start',textAlign:'left',fontSize:25,fontWeight: 'bold' }}>
                     Hola!
                     </Text>
-                    <Image source={require('../../assets/splashsad.png')} style={{alignContent:'flex-start', width:10,height:10,}} />
+                    <Text style={styles.hola}>Estas a un paso</Text>
+                    <Text style={styles.hola}>de unirte!</Text>
+      
                 </View>
-                <View style={{flex:2}}></View>
+                <View style={{marginBottom:50,marginLeft:250}}>
+                <Image source={require('../../assets/icon.png')} style={{alignItems:'flex-start', width:50,height:50,marginTop:30,}} />
+                </View>
            
-          {/*  <LinearGradient
+            <LinearGradient
              colors={['#076076', '#338c8c', '#4ebfbf']}
-            style={{marginTop:150, height: 400,borderRadius:20 }} >
+            style={{ height: 415,borderRadius:20 }} >
                                 
                             <Item floatingLabel style={styles.Items}>
                                 <Label style={styles.TextStyle}>Email:</Label>
@@ -108,7 +68,14 @@ export default class MainActivity extends Component  {
 
                             <Item floatingLabel style={styles.Items}>
                                 <Label style={styles.TextStyle}>Telefono:</Label>
-                                <Input
+                              {/*   <Icon
+                                    name='user'
+                                    size={50}
+                                    color='white'
+                                  />
+                                <Input */}
+                                
+                                
                                 Required
                                     keyboardType="phone-pad"  
                                     autoCorrect={false}
@@ -120,7 +87,11 @@ export default class MainActivity extends Component  {
 
                             <Item floatingLabel style={styles.Items}>
                                 <Label style={styles.TextStyle}>Fecha de Nacimiento:</Label>
+                               
+                                 }
                                 <Input
+                                
+                                  
                                 Required
                                     
                                     autoCorrect={false}
@@ -134,7 +105,7 @@ export default class MainActivity extends Component  {
                     
                             <Button style={{margin:10,width:340,height:60,borderRadius:10,backgroundColor:'#076076', }}
                                 full
-                                //onPress= {() => {Actions.show(); }}
+                               /*  onPress= {() => {Actions.Registro_p(); }} */
                                 
                                 >  
                                 
@@ -149,7 +120,7 @@ export default class MainActivity extends Component  {
                               color={'transparent'}
                             />
                            
-            </LinearGradient>*/}
+            </LinearGradient>
         
         </View> 
       </View>
@@ -177,13 +148,26 @@ const styles = StyleSheet.create({
         marginRight: 5
         
         },
-      header:{
-          flex:1,
-          backgroundColor:'#fff',
-      },
+        nombre1:{
+          color:'white',
+          marginRight:20,
+          marginTop:50,  
+          textAlign:'right',
+          fontSize:15,
+        }, 
+        nombre2:{
+          color:'white',
+          marginRight:160,  
+          textAlign:'right',
+          fontSize:15,
+        }, 
       textheader:{
         fontSize: 20, 
         textAlign: 'center',
+      },
+      hola:{
+        marginLeft:40,
+        fontSize:15,
       },  
       Items:{
         margin:10,
