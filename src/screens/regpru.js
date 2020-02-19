@@ -125,11 +125,12 @@ const styles = StyleSheet.create({
   rect: {
     top: 0,
     left: 0,
-    width: '100%',
+    width: 430,
     height: '100%',
     backgroundColor: "white",
     position: "absolute",
-    borderRadius:80
+    borderTopLeftRadius:80,
+    borderTopRightRadius:80
   },
   hola: {
     width: 102,
@@ -165,10 +166,11 @@ const styles = StyleSheet.create({
   rect2: {
     top: 167,
     left: 11,
-    width: '100%',
+    width: 430,
     height: '100%',
     position: "absolute",
-    borderRadius: 75,
+    borderTopLeftRadius: 80,
+    borderTopRightRadius: 80,
     overflow: "hidden"
   },
   rect2_imageStyle: {},
@@ -188,7 +190,7 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.01
   },
   image4: {
-    width: 37,
+    width: 87,
     height: 27,
     marginTop: 16
   },
@@ -214,7 +216,7 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.01
   },
   image5: {
-    width: 37,
+    width: 87,
     height: 27,
     marginLeft: 1,
     marginTop: 9
@@ -247,7 +249,7 @@ const styles = StyleSheet.create({
   image6: {
     top: 8,
     left: 293,
-    width: 37,
+    width: 87,
     height: 27,
     position: "absolute"
   },
@@ -259,7 +261,7 @@ const styles = StyleSheet.create({
   materialButtonSuccess: {
     width: 330,
     height: 36,
-    backgroundColor: "rgba(7,96,118,1)",
+    backgroundColor: "#076076",
     borderRadius: 10,
     marginTop: 12,
     marginLeft: 25
@@ -291,13 +293,13 @@ const styles = StyleSheet.create({
     marginTop: 78,
     marginLeft: 56
   },
-  ellipse: {
+  /* ellipse: {
     top: 0,
     left: 3,
     width: 106,
     height: 105,
     position: "absolute"
-  },
+  }, */
   imageStack: {
     width: 109,
     height: 105

@@ -17,11 +17,7 @@
       "resizeMode": "contain",
       "backgroundColor": "#076076"
     },
-    "rnpm": {
-      "assets": [
-    "./assets/fonts/"
-      ]
-  },
+  
     "updates": {
       "fallbackToCacheTimeout": 0
     },

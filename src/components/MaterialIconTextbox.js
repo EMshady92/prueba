@@ -10,7 +10,7 @@ function MaterialIconTextbox(props) {
         style={styles.iconStyle}
       ></Icon>
       <TextInput
-        placeholder={props.textInput1 || "26 de Agosto de 1985"}
+        placeholder={props.textInput1 || "username@correo.com"}
         placeholderTextColor="rgba(230, 230, 230,1)"
         style={styles.inputStyle}
       ></TextInput>

@@ -4,7 +4,7 @@ import { StyleSheet, TouchableOpacity, Text } from "react-native";
 function MaterialButtonSuccess(props) {
   return (
     <TouchableOpacity style={[styles.container, props.style]}>
-      <Text style={styles.caption}>BUTTON</Text>
+      <Text style={styles.caption}>Continuar</Text>
     </TouchableOpacity>
   );
 }
@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
   },
   caption: {
     color: "#fff",
-    fontSize: 14,
+    fontSize: 20,
   }
 });
 
