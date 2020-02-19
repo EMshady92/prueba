@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import { StyleSheet, Image, View } from 'react-native';
-import Registro from './src/componentes/Registro';
-import Registro_P from './src/componentes/R_particular';
-import SwithcUsuario from './src/componentes/S_user';
-import Prestador from './src/componentes/Prestador';
+import Registro from './src/screens/Registro';
+import Registro_P from './src/screens/R_particular';
+import SwithcUsuario from './src/screens/S_user';
+import Prestador from './src/screens/Prestador';
+import Repru from './src/screens/regpru';
 /* import { Router, Scene } from 'react-native-router-flux'; */
 
 export default class MainActivity extends Component{
@@ -21,7 +22,7 @@ export default class MainActivity extends Component{
     
         </Scene>
       </Router> */
-      <Prestador/>
+      <Repru/>
         );
       }
 }
