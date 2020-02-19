@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-
+import { LinearGradient } from 'expo-linear-gradient';
 import { StyleSheet, View, Alert, TextInput, Platform,Text,Image, TouchableOpacity, ListView, ActivityIndicator } from 'react-native';
 import { Container, Content, Header, Form, Input, Item, Button, Label} from 'native-base'
+import { CheckBox } from 'react-native-elements'; // 0.16.0
 //import { StackNavigator } from 'react-navigation';
-
 //import {createAppContainer} from 'react-navigation';
 //import {createStackNavigator} from 'react-navigation-stack';
 
@@ -59,7 +59,7 @@ export default class MainActivity extends Component  {
             // Showing response message coming from server after inserting records.
             setTimeout(()=>{
               this.refs.loading.close(); //cierra animacion cargando despues de 2 segundos
-              Alert.alert(responseJson);
+              Alert.alert(responseJson); 
               this.handleClick = Actions.show();
             }, 2000);
          
@@ -77,12 +77,22 @@ export default class MainActivity extends Component  {
 
     <View style={styles.MainContainer}>
        <View style={{ flex: 1, flexDirection: 'column' }}>
-        <View style={{ width: 360, height: 150, backgroundColor: '076076' }}>
+        <View style={{ width: 360, height: 150, backgroundColor: '#076076' }}>
 
         </View>
         
-        <View style={{ width: 360, height: 250, backgroundColor: 'skyblue',borderRadius:20 }} >
-            <View style={{marginTop:150, height: 400, backgroundColor: 'steelblue',borderRadius:20 }} >
+                <View style={{ width: 360, height: 500, backgroundColor: 'white',borderRadius:20 }} >
+                <View style={{flex:1, backgroundColor:'dark'}}>
+                   <Text style={{marginLeft:40,marginTop:30, alignContent:'flex-start',textAlign:'left',fontSize:25,fontWeight: 'bold' }}>
+                    Hola!
+                    </Text>
+                    <Image source={require('../../assets/splashsad.png')} style={{alignContent:'flex-start', width:10,height:10,}} />
+                </View>
+                <View style={{flex:2}}></View>
+           
+          {/*  <LinearGradient
+             colors={['#076076', '#338c8c', '#4ebfbf']}
+            style={{marginTop:150, height: 400,borderRadius:20 }} >
                                 
                             <Item floatingLabel style={styles.Items}>
                                 <Label style={styles.TextStyle}>Email:</Label>
@@ -122,19 +132,26 @@ export default class MainActivity extends Component  {
 
                 
                     
-                            <Button style={{margin:10,width:340,height:60,borderRadius:10 }}
+                            <Button style={{margin:10,width:340,height:60,borderRadius:10,backgroundColor:'#076076', }}
                                 full
-
-                                primary
-                                onPress= {() => {Actions.show(); }}
+                                //onPress= {() => {Actions.show(); }}
                                 
                                 >  
                                 
                                 <Text style={{ color: 'white',textAlign:'center',fontSize:30 }}>Continuar</Text>
                             </Button>
-            </View>
+                            
+                            <CheckBox 
+                              
+                              checkedColor={'white'}
+                              title={'Acepto terminos y condiciones'}
+                              style={{backgroundColor:'transparent',color:'transparent'}}
+                              color={'transparent'}
+                            />
+                           
+            </LinearGradient>*/}
         
-        </View>
+        </View> 
       </View>
         
     </View>
