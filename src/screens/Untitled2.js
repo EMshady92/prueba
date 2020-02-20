@@ -80,7 +80,7 @@ const styles = StyleSheet.create({
   },
   rect1: {
     width: 362,
-    height: 177,
+    height: 480,
     backgroundColor: "rgba(230, 230, 230,1)",
     position: "absolute",
     borderRadius: 27,
@@ -138,6 +138,7 @@ const styles = StyleSheet.create({
   },
   contrasena1ColumnColumn: {
     width: 212,
+    backgroundColor:'transparent',
     marginLeft: 18,
     marginTop: 11,
     marginBottom: 16
@@ -153,7 +154,7 @@ const styles = StyleSheet.create({
     top: 126,
     left: 0,
     width: 362,
-    height: 263,
+    height: 463,
     backgroundColor: "rgba(242,181,107,1)",
     position: "absolute",
     borderRadius: 27,
@@ -204,7 +205,6 @@ const styles = StyleSheet.create({
   doofit1: {
     color: "rgba(255,255,255,1)",
     fontSize: 35,
-    fontFamily: "calibri-bold",
     marginLeft: 11,
     marginTop: 13
   },
@@ -225,7 +225,7 @@ const styles = StyleSheet.create({
   },
   por1: {
     width: 264,
-    height: 96,
+    height: 180,
     color: "rgba(255,255,255,1)",
     fontSize: 15,
     marginBottom: 408,

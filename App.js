@@ -23,7 +23,7 @@ export default class MainActivity extends Component{
     
         </Scene>
       </Router> */
-      <Repru/>
+      <Nueva/>
         );
       }
 }
