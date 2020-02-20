@@ -86,7 +86,6 @@ const styles = StyleSheet.create({
     borderTopRightRadius:70,
     borderTopLeftRadius:70,
     borderWidth: 0,
-    borderStyle: "dashed",
   },
   /* ellipse1: {
     top: 10,
@@ -152,9 +151,6 @@ const styles = StyleSheet.create({
     height: 463,
     backgroundColor: "rgba(242,181,107,1)",
     position: "absolute",
-    borderColor: "#000000",
-    borderWidth: 0,
-    borderStyle: "dashed",
     borderTopRightRadius: 70,
     borderTopLeftRadius: 70
   },

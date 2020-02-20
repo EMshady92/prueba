@@ -83,18 +83,14 @@ const styles = StyleSheet.create({
     backgroundColor: "rgba(7,96,118,1)"
   },
   rect1: {
-    width: 362,
-    height: 177,
+    width: 420,
+    height: 480,
     backgroundColor: "rgba(230, 230, 230,1)",
     position: "absolute",
     borderRadius: 27,
-    borderColor: "#000000",
-    borderWidth: 0,
     borderStyle: "dashed",
-    borderBottomRightRadius: 0,
-    borderBottomLeftRadius: 0,
-    left: 1,
-    top: 0
+    borderTopRightRadius:70,
+    borderTopLeftRadius:70,
   },
   ellipse1: {
     top: 10,
@@ -162,16 +158,11 @@ const styles = StyleSheet.create({
   },
   rect2: {
     top: 126,
-    left: 0,
-    width: 362,
-    height: 263,
+    width: 420,
+    height: 463,
     position: "absolute",
-    borderRadius: 27,
-    borderColor: "#000000",
-    borderWidth: 0,
-    borderStyle: "dashed",
-    borderBottomRightRadius: 0,
-    borderBottomLeftRadius: 0,
+    borderTopRightRadius:70,
+    borderTopLeftRadius:70,
     overflow: "hidden"
   },
   rect2_imageStyle: {},
@@ -237,8 +228,8 @@ const styles = StyleSheet.create({
     flex: 1
   },
   por1: {
-    width: 264,
-    height: 96,
+    width: 260,
+    height: 180,
     color: "rgba(255,255,255,1)",
     fontSize: 15,
    /*  fontFamily: "roboto-100", */
