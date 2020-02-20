@@ -1,17 +1,17 @@
 import React, { Component } from "react";
 import { StyleSheet, TouchableOpacity, Text } from "react-native";
 
-function MaterialButtonPrimary(props) {
+function MaterialButtonLight(props) {
   return (
     <TouchableOpacity style={[styles.container, props.style]}>
-      <Text style={styles.caption}>Soy instructor</Text>
+      <Text style={styles.caption}>ID empresa</Text>
     </TouchableOpacity>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "rgba(7,96,118,1)",
+    backgroundColor: "rgba(255,255,255,1)",
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "center",
@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
     paddingLeft: 16,
     elevation: 2,
     minWidth: 88,
-    borderRadius: 5,
+    borderRadius: 2,
     shadowOffset: {
       height: 1,
       width: 0
@@ -29,10 +29,10 @@ const styles = StyleSheet.create({
     shadowRadius: 5
   },
   caption: {
-    color: "#fff",
+    color: "rgba(162,162,162,1)",
     fontSize: 14,
-    /* fontFamily: "roboto-300" */
+    fontFamily: "roboto-regular"
   }
 });
 
-export default MaterialButtonPrimary;
+export default MaterialButtonLight;

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { StyleSheet, TouchableOpacity, Text } from "react-native";
 
-function MaterialButtonPrimary(props) {
+function MaterialButtonPrimaryRParticular(props) {
   return (
     <TouchableOpacity style={[styles.container, props.style]}>
       <Text style={styles.caption}>Soy instructor</Text>
@@ -35,4 +35,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default MaterialButtonPrimary;
+export default MaterialButtonPrimaryRParticular;
