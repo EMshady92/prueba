@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import { StyleSheet, Image, View } from 'react-native';
-import Registro from './src/screens/Registro';
 import Registro_P from './src/screens/R_particular';
 import SwithcUsuario from './src/screens/S_user';
 import Prestador from './src/screens/Prestador';
-import Repru from './src/screens/regpru';
-import Nueva from './src/screens/Untitled2';
+import Registro from './src/screens/regpru';
+import Nueva from './src/screens/SwicthUser';
 /* import { Router, Scene } from 'react-native-router-flux'; */
 
 export default class MainActivity extends Component{

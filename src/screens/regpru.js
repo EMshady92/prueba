@@ -123,8 +123,6 @@ const styles = StyleSheet.create({
     backgroundColor: "#076076"
   },
   rect: {
-    top: 0,
-    left: 0,
     width: 430,
     height: '100%',
     backgroundColor: "white",

@@ -79,26 +79,22 @@ const styles = StyleSheet.create({
     backgroundColor: "rgba(7,96,118,1)"
   },
   rect1: {
-    width: 362,
+    width: 420,
     height: 480,
     backgroundColor: "rgba(230, 230, 230,1)",
     position: "absolute",
-    borderRadius: 27,
-    borderColor: "#000000",
+    borderTopRightRadius:70,
+    borderTopLeftRadius:70,
     borderWidth: 0,
     borderStyle: "dashed",
-    borderBottomRightRadius: 0,
-    borderBottomLeftRadius: 0,
-    left: 1,
-    top: 0
   },
-  ellipse1: {
+  /* ellipse1: {
     top: 10,
     left: 0,
     width: 100,
     height: 100,
     position: "absolute"
-  },
+  }, */
   image3: {
     top: 0,
     left: 6,
@@ -106,7 +102,7 @@ const styles = StyleSheet.create({
     height: 120,
     position: "absolute",
     borderColor: "#000000",
-    borderWidth: 0
+    borderWidth:0
   },
   ellipse1Stack: {
     width: 100,
@@ -152,24 +148,22 @@ const styles = StyleSheet.create({
   },
   rect2: {
     top: 126,
-    left: 0,
-    width: 362,
+    width: 420,
     height: 463,
     backgroundColor: "rgba(242,181,107,1)",
     position: "absolute",
-    borderRadius: 27,
     borderColor: "#000000",
     borderWidth: 0,
     borderStyle: "dashed",
-    borderBottomRightRadius: 0,
-    borderBottomLeftRadius: 0
+    borderTopRightRadius: 70,
+    borderTopLeftRadius: 70
   },
   materialButtonPrimary1: {
-    top: 171,
-    left: 0,
+    top: 181,
+    left: 20,  
     width: 284,
     height: 36,
-    position: "absolute"
+    position:'absolute'
   },
   image2: {
     top: 0,
